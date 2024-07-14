@@ -55,11 +55,11 @@ body {
   }
 }
 /* Large */
-/* @media (min-width: 1350px) {
+@media (min-width: 1350px) {
   .my-container {
     width: 1400px;
   }
-} */
+}
 /* end my container  */
 /* whatsapp link */
 .floating-whatsapp a {
