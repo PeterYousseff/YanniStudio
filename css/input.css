@@ -45,21 +45,21 @@ body {
 /* Medium */
 @media (min-width: 992px) {
   .my-container{
-    width: 970px;
+    width: 960px;
   }
 }
 /* Large */
 @media (min-width: 1200px) {
   .my-container {
-    width: 1170px;
+    width: 1140px;
   }
 }
-/* Large */
-/* @media (min-width: 1350px) {
+/* x-Large */
+@media (min-width: 1400px) {
   .my-container {
-    width: 1400px;
+    width: 1350px;
   }
-} */
+}
 /* end my container  */
 /* whatsapp link */
 .floating-whatsapp a {
@@ -213,7 +213,7 @@ pointer-events: none;
 }
 @media (max-width:786px) {
   #slider {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 #slider .servicesSlider {
@@ -221,7 +221,7 @@ pointer-events: none;
   width: 9000px; /* Assign an insanely large width */
   top: 0;
   right: 0;
-  animation: slide-animation 20s infinite;
+  animation: slide-animation 30s infinite;
 }
 #slider .slide {
   position: relative;
@@ -251,11 +251,12 @@ pointer-events: none;
     right: 500%; 
   }
   100% {
-    opacity: 0;
-    right: 500%;
+    right: 600%;
+  }
+  110% {
+    right: 700%;
   }
 }
-/* [DOES NOT MATTER] */
 
 /* about us section  */
 /* services */
@@ -378,7 +379,7 @@ transition: 0.5s;
 /* services */
 /* clients */
 .clientsSection .clients  {
-  grid-template-columns: repeat(auto-fill , minmax(200px ,1fr));
+  grid-template-columns: repeat(auto-fill , minmax(250px ,1fr));
 }
 @media (max-width:1280px) {
   .clientsSection .clients {
@@ -387,7 +388,7 @@ transition: 0.5s;
 }
 @media (max-width:786px) {
   .clientsSection .clients  {
-  grid-template-columns: repeat(auto-fill , minmax(250px ,1fr));
+  grid-template-columns: repeat(auto-fill , minmax(150px ,1fr));
   }
 } 
 .clientsSection .clients .client {
@@ -627,7 +628,6 @@ footer .ourServices .services a:hover {
   }
 }
 
-
 .main-image {
   display: flex;
   align-items: center;
@@ -636,7 +636,11 @@ footer .ourServices .services a:hover {
   height: 75%;
   transition: opacity 0.5s ease-in-out;
 }
-
+@media (max-width:786px)  {
+  .main-image {
+    height: 100%;
+  }
+}
 .main-arrow {
   background-color: transparent;
   border: none;
@@ -698,6 +702,12 @@ display: none;
   width: 400px; /* Adjust this value to control the number of visible related images */
   transition: transform 0.5s ease-in-out; /* Add this line */
 }
+@media (max-width:786px) {
+  .related-images {
+    width: 200px;
+    gap: 5px;
+  }
+}
 
 .related-images img {
   width: auto;
@@ -707,7 +717,7 @@ display: none;
 }
 @media (max-width:786px) {
   .related-images img {
-    height: 30px;
+    height: 35px;
   }
 }
 

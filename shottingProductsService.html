@@ -22,13 +22,14 @@
           <div class="menu visibleNavMenu  duration-500 ">
             <!-- start main ul -->
             <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
-              <li class="p-5 block max-md:p-3"><a href="./index.html" class="block duration-300 text-mainWhite text-xl hover:text-mainOrange">Home</a></li>
-              <li class="p-5 block  relative max-md:p-3"><a href="./index.html#aboutUs" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange" >About us</a></li>
+              <li class="p-5 block max-md:p-3"><a href="./index.html" class="block duration-300 active text-xl hover:text-mainOrange target ">Home</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="#aboutUs" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange target" >About us</a></li>
+              <!-- menu -->
               <li class="p-5 block down  relative max-md:p-3 ">
-                <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-mainWhite text-xl hover:text-mainOrange active">Services 
-                  <i class="fa-solid fa-chevron-down text-mainWhite max-md:text-mainBlue group-hover:text-mainOrange duration-300 active"></i>
+                <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-mainWhite text-xl hover:text-mainOrange">Services 
+                  <i class="fa-solid fa-chevron-down text-mainWhite max-md:text-mainBlue group-hover:text-mainOrange duration-300"></i>
                 </a>
-                <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 bg-mainWhite mt-3" >
+                <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 bg-mainWhite mt-3" > <!-- js -->
                   <ul class=" bg-white w-60 max-md:p-0 max-md:ml-3">
                     <li class=""><a href="./motionGraphicsService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange">Motion Graphics</a></li>
                     <li class=""><a href="./videoEditingService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange">Video Editing</a></li>
@@ -39,10 +40,11 @@
                     <li class=""><a href="./socialMediaService.html" class="block p-3 pr-10 text-mainBlue hover:text-mainBlue hover:bg-mainOrange" >Social Media Services</a></li>
                   </ul>
                 </div>
-                <li class="p-5 block relative max-md:p-3"><a href="./index.html#ourWork" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange">Our Work</a></li>
+                <li class="p-5 block relative max-md:p-3"><a href="#ourWork" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange target">Our Work</a></li>
               </li>
-              <li class="p-5 block  relative max-md:p-3"><a href="./index.html#clients" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange">Clients</a></li>
-              <li class="p-5 block max-md:p-3"><a href="./contactUs.html" class="block duration-300 text-mainWhite text-xl">Contact us</a></li>
+              <!-- menu -->
+              <li class="p-5 block  relative max-md:p-3"><a href="#clients" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange target">Clients</a></li>
+              <li class="p-5 block max-md:p-3"><a href="./contactUs.html" class="block duration-300 text-mainWhite text-xl target">Contact us</a></li>
             </ul>
           </div>
         </div>
@@ -82,7 +84,7 @@
   </div>
 </section>
 <!-- footer -->
-<footer class=" mt-32" id="footer">
+<footer class="max-sm:pt-14 pt-32" id="footer">
   <div class="p-5 bg-mainOrange">
     <div class="footerContent flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
       <!-- logo and follow us -->
@@ -106,10 +108,10 @@
         <h3 class="text-mainBlue text-4xl font-bold w-fit relative">Our Services</h3>
         <div class="services flex flex-col pt-4">
           <a href="./motionGraphicsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Motion Graphics</a>
-          <a href="./videoEditingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">video Editing</a>
+          <a href="./videoEditingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Video Editing</a>
           <a href="./filmMakingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Film Making</a>
-          <a href="./webDevelopService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Web Develop</a>
-          <a href="./shottingProductsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Shotting Product</a>
+          <a href="./webDevelopService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Web Development</a>
+          <a href="./shottingProductsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Shotting Products</a>
           <a href="./audo&musicRecordingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Audio & Music Recording</a>
           <a href="./socialMediaService.html" class="text-mainWhite text-xl duration-500 w-fit">Social Media Services</a>
         </div>

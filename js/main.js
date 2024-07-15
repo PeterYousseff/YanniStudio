@@ -10,6 +10,71 @@ function changeBg() {
 }
 window.addEventListener("scroll", changeBg);
 
+// =========================================================
+// =========================== navbar ======================
+// =========================================================
+  // Function to toggle the menu
+  function toggleMenu() {
+    const other = document.getElementById("other");
+    other.classList.toggle("removeMenu");
+  }
+  // Function to close the menu when clicking outside
+  function closeMenuOnClickOutside(event) {
+    const dropdownMenu = document.querySelector('.other');
+    if (!event.target.closest('.down')) {
+      dropdownMenu.classList.add("removeMenu");
+    }
+  }
+  // Attach event listeners
+  document.getElementById("aMenu").addEventListener("click", toggleMenu);
+  document.addEventListener("click", closeMenuOnClickOutside);
+// =========================================================
+// =========================================================
+// close and open the menu in responsive design
+let toggler = document.querySelector(".toggler");
+let menu = document.querySelector(".menu");
+
+// Toggle menu visibility on toggler click
+toggler.onclick = function () {
+  menu.classList.toggle("visibleNavMenu");
+};
+
+document.addEventListener("click", function (event) {
+  if (!menu.contains(event.target) && !toggler.contains(event.target)) {
+    menu.classList.add("visibleNavMenu");
+  }
+});
+
+// Get all the links inside the menu
+const links = menu.getElementsByClassName('target');
+
+// Function to close the menu
+function closeMenu() {
+    // menu.style.display = 'none'; // Hide the menu
+    menu.classList.add("visibleNavMenu");
+}
+
+// Add click event listeners to each link
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', closeMenu);
+}
+
+// =========================================================
+// =========================== navbar ======================
+// =========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
 // visible scroll to top
 function visibleScrollToTop() {
   let scrollToTop = document.getElementById("scroll-to-top");
@@ -22,18 +87,7 @@ function visibleScrollToTop() {
 }
 window.addEventListener("scroll", visibleScrollToTop);
 
-// click on services in navbar
-let services = document.getElementById("aMenu");
-let other = document.getElementById("other");
-services.onclick = function () {
-  other.classList.toggle("removeMenu");
-};
 
-let toggler = document.querySelector(".toggler");
-let menu = document.querySelector(".menu");
-toggler.onclick = function () {
-  menu.classList.toggle("visibleNavMenu");
-};
 
 // slider
 var swiper = new Swiper(".slide-content", {
