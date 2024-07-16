@@ -683,6 +683,14 @@ video {
   height: 6rem;
 }
 
+.max-h-16 {
+  max-height: 4rem;
+}
+
+.max-h-20 {
+  max-height: 5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2083,6 +2091,10 @@ footer .ourServices .services a:hover {
 
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:w-16 {
+    width: 4rem;
   }
 
   .max-md\:cursor-pointer {
