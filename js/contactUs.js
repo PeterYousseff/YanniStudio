@@ -1,5 +1,5 @@
 // Initialize EmailJS with your Service ID and Template ID
-emailjs.init('GT4_phljrEwGepz7L');
+emailjs.init('_05SozipdoPy1Adp7');
 
 // Function to send email
 function sendEmail(event) {

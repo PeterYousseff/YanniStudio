@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://i.ibb.co/pwqgTJB/mai-head-logo.png" type="https://i.ibb.co/pwqgTJB/mai-head-logo.png">
+  <!-- <link rel="icon" href="https://i.ibb.co/BgwJrnS/final-logooo.png" type="https://i.ibb.co/BgwJrnS/final-logooo.png"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link href="./css/input.css" rel="stylesheet">
   <link href="./css/output.css" rel="stylesheet">
@@ -16,9 +17,9 @@
 <body>
 <!-- nav bar -->
 <header class="sticky top-0 z-50 bg-white duration-500" id="navbar">
-  <div class="header h-24 mx-auto max-h-20">
-    <div class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 relative">
-      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/tx0YvYT/home-do-studio-logo.png" alt="" class="w-24 max-md:w-16" /></a></div>
+  <div class="header h-24 mx-auto">
+    <div class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-24 relative">
+      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36 " /></a></div>
       <div class="links "><i class="fa-solid text-mainWhite max-md:hidden fa-bars max-md:text-3xl max-md:cursor-pointer toggler"></i>
         <!-- start menu -->
         <div class="menu visibleNavMenu  duration-500 ">
@@ -27,19 +28,19 @@
             <li class="p-5 block max-md:p-3"><a href="./index.html" class="block duration-300 active text-xl hover:text-mainOrange target ">Home</a></li>
             <li class="p-5 block  relative max-md:p-3"><a href="#aboutUs" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange target" >About us</a></li>
             <!-- menu -->
-            <li class="p-5 block down  relative max-md:p-3 ">
+            <li class="p-5 block down relative max-md:p-3 ">
               <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-mainWhite text-xl hover:text-mainOrange">Services 
-                <i class="fa-solid fa-chevron-down text-mainWhite max-md:text-mainBlue group-hover:text-mainOrange duration-300"></i>
+                <i class="fa-solid fa-chevron-down text-mainWhite max-md:text-newMain group-hover:text-mainOrange duration-300"></i>
               </a>
               <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 bg-mainWhite mt-3" > <!-- js -->
                 <ul class=" bg-white w-60 max-md:p-0 max-md:ml-3">
-                  <li class=""><a href="./motionGraphicsService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange">Motion Graphics</a></li>
-                  <li class=""><a href="./videoEditingService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange">Video Editing</a></li>
-                  <li class=""><a href="./filmMakingService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange">Film Making</a></li>
-                  <li class=""><a href="./webDevelopService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange" >Web Develop</a></li>
-                  <li class=""><a href="./shottingProductsService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange" >Shotting Product</a></li>
-                  <li class=""><a href="./audo&musicRecordingService.html" class="block p-3 pr-10 border-b text-mainBlue hover:text-mainBlue hover:bg-mainOrange" >Audio &#38; Music Recording</a></li>
-                  <li class=""><a href="./socialMediaService.html" class="block p-3 pr-10 text-mainBlue hover:text-mainBlue hover:bg-mainOrange" >Social Media Services</a></li>
+                  <li class=""><a href="./motionGraphicsService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange">Motion Graphics</a></li>
+                  <li class=""><a href="./videoEditingService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange">Video Editing</a></li>
+                  <li class=""><a href="./filmMakingService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange">Film Making</a></li>
+                  <li class=""><a href="./webDevelopService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange" >Web Development</a></li>
+                  <li class=""><a href="./shottingProductsService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange" >Shotting Product</a></li>
+                  <li class=""><a href="./audo&musicRecordingService.html" class="block p-3 pr-10 border-b text-newMain hover:text-newMain hover:bg-mainOrange" >Audio &#38; Music Recording</a></li>
+                  <li class=""><a href="./socialMediaService.html" class="block p-3 pr-10 text-newMain hover:text-newMain hover:bg-mainOrange" >Social Media Services</a></li>
                 </ul>
               </div>
               <li class="p-5 block relative max-md:p-3"><a href="#ourWork" class="block relative duration-300 text-mainWhite text-xl hover:text-mainOrange target">Our Work</a></li>
@@ -65,42 +66,40 @@
 </div>
 <!-- whatsapp link -->
 <!-- start into section -->
-<section class="bg-mainBlue intro" id="home">
-  <div class="intro-content my-container pt-32 pb-10 flex items-center justify-between overflow-hidden">
-    <div class="text w-1/2 max-md:w-full">
-      <div class="logo">
-        <img src="https://i.ibb.co/tx0YvYT/home-do-studio-logo.png" class="w-48"/>
-      </div>
-      <h1 class="text-8xl max-md:text-7xl font-black text-mainWhite ">JUST <br> <span class="text-mainOrange">DREAM</span></h1>
-      <div id="slider">
-        <div class="servicesSlider">
-          <div class="slide">
-            <h3>Motion graphics</h3>
-          </div>
-          <div class="slide">
-            <h3>Video Edition</h3>
-          </div>
-          <div class="slide">
-            <h3>Film Making</h3>
-          </div>
-          <div class="slide">
-            <h3>Web Develop</h3>
-          </div>
-          <div class="slide">
-            <h3>Shotting Product</h3>
-          </div>
-          <div class="slide">
-            <h3>Audio &#38; Music Recording</h3>
-          </div>
-          <div class="slide">
-            <h3>Social Media Services</h3>
+<section class="intro" id="home">
+  <div class="image-inro relative overflow-hidden">
+    <img src="https://i.ibb.co/xgbymBL/STUDIO.png" alt="" class="-z-10 zoom">
+  </div>
+  <div class="intro-content my-container absolute text-center w-full  left-1/2 bottom-12 -translate-x-1/2  overflow-hidden">
+    <div class="text  max-md:w-full">
+      <h1 class="text-8xl max-md:text-7xl font-black text-mainWhite ">YANNI STUDIO<br> <span class="text-mainOrange text-6xl">Media Production House</span></h1>
+      <div class="main-slider flex justify-center">
+        <div id="slider">
+          <div class="servicesSlider">
+            <div class="slide">
+              <h3>Motion graphics</h3>
+            </div>
+            <div class="slide">
+              <h3>Video Edition</h3>
+            </div>
+            <div class="slide">
+              <h3>Film Making</h3>
+            </div>
+            <div class="slide">
+              <h3>Web Development</h3>
+            </div>
+            <div class="slide">
+              <h3>Shotting Product</h3>
+            </div>
+            <div class="slide">
+              <h3>Audio &#38; Music Recording</h3>
+            </div>
+            <div class="slide">
+              <h3>Social Media Services</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="photo relative">
-      <img class=" opacity-50 music-intro absolute right-24 w-64 top-1/2 -translate-x-1/2 -translate-y-1/2" src="https://i.ibb.co/41g1FKK/home-intro.gif">
-      <img src="https://i.ibb.co/4FWZ3Nx/home-intro.png" alt="" class="w-64 ">
     </div>
   </div>
 </section>
@@ -108,23 +107,23 @@
 <!-- about us section -->
 <section id="aboutUs">
   <div class="aboutUS my-container pt-32 pb-10 max-sm:pt-14">
-    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl ">About Us</h2>
+    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl " data-aos="flip-down">About Us</h2>
     <div class="content-aboutUs flex items-center justify-between pt-14">
-      <div class="photo">
+      <div class="photo" data-aos="fade-right">
         <img class="aboutUs-img w-3/4" src="https://i.ibb.co/tK28kpW/home-aboutus.png" alt="">
       </div>
-      <div class="text">
+      <div class="about-us-desc" data-aos="fade-left">
         <h2 class="font-bold text-5xl text-mainOrange text-nowrap max-lg:text-4xl max-sm:text-center">Yanni Studio</h2>
-        <p class="text-mainWhite text-3xl pt-5">Is a production house makes all types of visual and audio content.</p>
-        <p class="text-mainWhite text-3xl pt-10">We have a main target that
+        <p class=" text-3xl pt-5">Is a production house makes a different types of visual and audio content.</p>
+        <p class=" text-3xl pt-10">We have a main target that
           is everything in your imagination we will convert to content that you can see and listen.</p>
       </div>
     </div>
   </div>
 </section>
 <!-- slider -->
-<section class="pt-32 pb-10 max-sm:pt-14" id="services">
-  <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl">Services</h2>
+<section class="services py-32 bg-newMain max-sm:py-14" id="services">
+  <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl" data-aos="flip-down">Services</h2>
   <div class="slide-container swiper pt-14">
     <div class="slide-content">
         <div class="card-wrapper swiper-wrapper">
@@ -217,89 +216,108 @@
 <!-- our work -->
 <section id="ourWork">
   <div class="my-container pt-32 pb-10">
-    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl">Our Work</h2>
+    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl" data-aos="flip-down">Our Work</h2>
     <div class="content ourWork flex flex-col gap-6 w-full justify-center items-center mt-10">
-      <!-- <a href="./ShowReals.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">SHOW REALS</a> -->
-      <a href="./ShortFilms.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">SHORT FILMS</a>
-      <a href="./MotionGraphics.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">MOTION GRAPHICS</a>
-      <a href="./ShottingProducts.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">SHOTTING PRODUCTS</a>
-      <a href="./CoverAndOriginalSongs.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">COVER AND ORIGINAL SONGS</a>
-      <a href="./Photography.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">PHOTOGRAPHY</a>
-      <a href="./Documentaries.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-mainBlue duration-300">DOCUMENTARIES</a>
+      <!-- <a href="./ShowReals.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-newMain duration-300">SHOW REALS</a> -->
+      <div class="w-full flex justify-center" data-aos="fade-right">
+        <a href="./ShortFilms.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">SHORT FILMS</a>
+      </div>
+      <div class="w-full flex justify-center" data-aos="fade-left">
+        <a href="./MotionGraphics.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">MOTION GRAPHICS</a>
+      </div>
+      <div class="w-full flex justify-center" data-aos="fade-right">
+        <a href="./ShottingProducts.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">SHOTTING PRODUCTS</a>
+      </div>
+      <div class="w-full flex justify-center" data-aos="fade-left">
+        <a href="./CoverAndOriginalSongs.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">COVER AND ORIGINAL SONGS</a>
+      </div>
+      <div class="w-full flex justify-center" data-aos="fade-right">
+        <a href="./Photography.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">PHOTOGRAPHY</a>
+      </div>
+      <div class="w-full flex justify-center" data-aos="fade-left">
+        <a href="./Documentaries.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">DOCUMENTARIES</a>
+      </div>
     </div>
   </div>
 </section>
 <!-- our work -->
 <!-- clients -->
 <section class="clientsSection" id="clients">
-  <div class="my-container pt-32 max-sm:pt-14 pb-10">
-    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl ">Clients</h2>
-    <div class="clients grid place-items-center  gap-4 pt-14">
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/SRPhSkD/home-clients-1.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/nPdjnPb/home-clients-2.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/bBP1R60/home-clients-3.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/q77v1T4/home-clients-4.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/bKbvCB5/home-clients-5.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/Qc94Q7f/home-clients-6.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/Rh6Z9H2/home-clients-7.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/WzfJvTS/home-clients8.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/0jWNVPT/home-clients-9.png" alt="" class="w-56">
-      </div>
-      <div class="client bg-mainWhite w-fit rounded-lg p-4">
-        <img src="https://i.ibb.co/PrqFCG6/home-clients-10.png" alt="" class="w-56">
+  <div class="my-container py-32 max-sm:pyt-14 ">
+    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl " data-aos="flip-down">Clients</h2>
+    <div class="carousel" 
+    style="
+    --width: 250px; 
+    --height: 250px; 
+    --quantity: 10;
+    --duration: 15s">
+      <div class="clients grid place-items-center gap-4 pt-14 carousel__list">
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 1">
+          <img src="https://i.ibb.co/SRPhSkD/home-clients-1.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 2">
+          <img src="https://i.ibb.co/nPdjnPb/home-clients-2.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 3">
+          <img src="https://i.ibb.co/bBP1R60/home-clients-3.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 4">
+          <img src="https://i.ibb.co/q77v1T4/home-clients-4.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 5">
+          <img src="https://i.ibb.co/bKbvCB5/home-clients-5.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52rounded-lg p-4 carousel__item" style="--position: 6">
+          <img src="https://i.ibb.co/Qc94Q7f/home-clients-6.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 7">
+          <img src="https://i.ibb.co/Rh6Z9H2/home-clients-7.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 8">
+          <img src="https://i.ibb.co/WzfJvTS/home-clients8.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 9">
+          <img src="https://i.ibb.co/0jWNVPT/home-clients-9.png" alt="" class="w-fit">
+        </div>
+        <div class="client w-52 rounded-lg p-4 carousel__item" style="--position: 10">
+          <img src="https://i.ibb.co/PrqFCG6/home-clients-10.png" alt="" class="w-fit">
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- clients -->
 <!-- footer -->
-<footer class="max-sm:pt-14 pt-32" id="footer">
-  <div class="p-5 bg-mainOrange">
+<footer class="max-sm:py-10 py-14" id="footer">
+  <div class="p-5 ">
     <div class="footerContent flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
       <!-- logo and follow us -->
       <div class="links logoAndFollowUs w-1/3 max-lg:w-full">
-        <h3 class="text-mainBlue text-4xl font-bold w-fit relative">Contact Us</h3>
+        <h3 class="text-mainOrange text-4xl font-bold w-fit relative">Contact Us</h3>
         <div class="links flex gap-2 pt-4">
-          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex "></i></a>
-          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex "></i></a>
-          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex "></i></a>
-          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex "></i></a>
+          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl text-newMain bg-mainWhite w-10 h-10 rounded-full flex hover:text-mainOrange"></i></a>
+          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl text-newMain bg-mainWhite w-10 h-10 rounded-full flex hover:text-mainOrange"></i></a>
+          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl text-newMain bg-mainWhite w-10 h-10 rounded-full flex hover:text-mainOrange"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl text-newMain bg-mainWhite w-10 h-10 rounded-full flex hover:text-mainOrange"></i></a>
         </div>
         <div class="links flex flex-col gap-2 mt-4">
-          <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-mainWhite text-2xl duration-500 hover:text-mainBlue"><i class="fa-brands fa-whatsapp text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex text-2xl"></i>01154423118</a>
-          <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-2 text-mainWhite text-xl duration-500 hover:text-mainBlue"><i class="fa-regular fa-envelope text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex text-2xl"></i>yannistudio.org@gmail.com</a>
-          <a href="https://maps.app.goo.gl/7BJTxHdVAYKcm4MHA" class="flex w-fit items-center gap-2 text-mainWhite duration-500 hover:text-mainBlue"><i class="fa-solid fa-location-dot  text-mainBlue bg-mainWhite w-10 h-10 rounded-full flex text-2xl"></i>70 Abdelrahman.ST Cairo - Egypt</a>
+          <a href="https://wa.me/201154423118" class="group flex w-fit items-center gap-2 text-mainWhite text-2xl duration-500 hover:text-mainOrange"><i class="fa-brands fa-whatsapp text-newMain bg-mainWhite group-hover:text-mainOrange w-10 h-10 rounded-full flex text-2xl"></i>01154423118</a>
+          <a href="mailto:yannistudio.org@gmail.com" class="group flex w-fit items-center gap-2 text-mainWhite text-xl duration-500 hover:text-mainOrange"><i class="fa-regular fa-envelope text-newMain bg-mainWhite group-hover:text-mainOrange w-10 h-10 rounded-full flex text-2xl"></i>yannistudio.org@gmail.com</a>
+          <a href="https://maps.app.goo.gl/7BJTxHdVAYKcm4MHA" class="group flex w-fit items-center gap-2 text-mainWhite duration-500 hover:text-mainOrange"><i class="fa-solid fa-location-dot  text-newMain bg-mainWhite group-hover:text-mainOrange w-10 h-10 rounded-full flex text-2xl"></i>70 Abdelrahman.ST Cairo - Egypt</a>
         </div>
       </div>
       <!-- links and contact us -->
       <!-- our services -->
       <div class="links ourServices w-1/3 max-lg:w-full">
-        <h3 class="text-mainBlue text-4xl font-bold w-fit relative">Our Services</h3>
+        <h3 class="text-mainOrange text-4xl font-bold w-fit relative">Our Services</h3>
         <div class="services flex flex-col pt-4">
-          <a href="./motionGraphicsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Motion Graphics</a>
-          <a href="./videoEditingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Video Editing</a>
-          <a href="./filmMakingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Film Making</a>
-          <a href="./webDevelopService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Web Development</a>
-          <a href="./shottingProductsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Shotting Products</a>
-          <a href="./audo&musicRecordingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit">Audio & Music Recording</a>
-          <a href="./socialMediaService.html" class="text-mainWhite text-xl duration-500 w-fit">Social Media Services</a>
+          <a href="./motionGraphicsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Motion Graphics</a>
+          <a href="./videoEditingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Video Editing</a>
+          <a href="./filmMakingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Film Making</a>
+          <a href="./webDevelopService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Web Development</a>
+          <a href="./shottingProductsService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Shotting Products</a>
+          <a href="./audo&musicRecordingService.html" class="text-mainWhite text-xl duration-500 mb-2 w-fit hover:text-mainOrange">Audio & Music Recording</a>
+          <a href="./socialMediaService.html" class="text-mainWhite text-xl duration-500 w-fit hover:text-mainOrange">Social Media Services</a>
         </div>
       </div>
       <!-- map -->
@@ -312,5 +330,9 @@
 <!-- footer -->
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

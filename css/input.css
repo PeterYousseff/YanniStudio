@@ -13,14 +13,17 @@ html {
 
 /* google font */
 body {
-  background-color: var(--main-blue);
+  /* background-color: var(--main-blue); */
   font-family: "Josefin Sans", sans-serif;
+  background-color: #ddd;
+  background-color: #f2f2f2;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 /* start scroll style */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--main-orange);
@@ -144,15 +147,19 @@ header .header .other ul li a  {
   }
 }
 /* other menu */
+header {
+  background-color: transparent;
+}
+header {
+  background-color: #333;
+}
 .bgColor {
-  background-color:var(--main-blue);
+  /* background-color:#333; */
   box-shadow: -1px 8px 31px 0px rgba(0,0,0,0.39);
   -webkit-box-shadow: -1px 8px 31px 0px rgba(0,0,0,0.39);
   -moz-box-shadow: -1px 8px 31px 0px rgba(0,0,0,0.39);
 }
-.textColorNav {
-  color: var(--main-blue);
-}
+
 /* end header  */  
 /* scroll to top */
 .popup {
@@ -180,6 +187,16 @@ pointer-events: none;
 /* scroll to top */
 /* home page */
 /* intro section */
+.zoom {
+  animation: scale 40s linear infinite;
+}
+  
+@keyframes scale {
+  50% {
+
+    transform:scale(1.15);
+  }
+}
 @media (max-width: 992px) {
   .intro .photo .music-intro {
     display:none;
@@ -258,6 +275,10 @@ pointer-events: none;
   }
 }
 
+/* about us section  */
+.about-us-desc {
+  color: #333;
+}
 /* about us section  */
 /* services */
 .services .cards {
@@ -378,7 +399,8 @@ transition: 0.5s;
 /* slider */
 /* services */
 /* clients */
-.clientsSection .clients  {
+
+/* .clientsSection .clients  {
   grid-template-columns: repeat(auto-fill , minmax(250px ,1fr));
 }
 @media (max-width:1280px) {
@@ -390,19 +412,64 @@ transition: 0.5s;
   .clientsSection .clients  {
   grid-template-columns: repeat(auto-fill , minmax(150px ,1fr));
   }
-} 
+}  */
 .clientsSection .clients .client {
 transition: 0.5s;
 }
 .clientsSection .clients .client:hover {
-  box-shadow: -4px 3px 42px -2px rgba(255,255,255,0.53);
-  -webkit-box-shadow: -4px 3px 42px -2px rgba(255,255,255,0.53);
-  -moz-box-shadow: -4px 3px 42px -2px rgba(255,255,255,0.53);
   transform: scale(1.05);
+}
+
+.carousel {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+  display: flex;
+}
+.carousel:hover .carousel__item {
+  animation-play-state: paused !important;
+}
+.carousel__list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.carousel__item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: slide var(--duration) linear infinite;
+  animation-delay: calc(var(--duration) / var(--quantity) * (var(--position) - var(--quantity))) !important;
+}
+[reverse=true] .carousel__item {
+  animation: slideReverse var(--duration) linear infinite;
+}
+
+@keyframes slide {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+@keyframes slideReverse {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
 }
 /* clients */
 /* home page */
 /* footer */
+footer {
+  background-color: #333;
+}
 footer .logoAndFollowUs i ,
 footer .aboutUS i {
   display: flex;
@@ -410,10 +477,7 @@ footer .aboutUS i {
   align-items: center;
   transition: 0.5s;
   }
-  footer .logoAndFollowUs a:hover i {
-    background-color: var(--main-blue);
-    color: white;
-  } 
+
   footer .footerContent h3::before {
   content: "";
   position: absolute;
@@ -424,9 +488,7 @@ footer .aboutUS i {
   top: 0;
   left: -15px;
   }
-footer .ourServices .services a:hover {
-  color: var(--main-blue);
-}
+
 @media (max-width : 1280px) {
   footer .footerContent .map iframe {
   width: 250px;
