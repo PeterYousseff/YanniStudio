@@ -19,7 +19,7 @@
 <header class="sticky top-0 z-50 bg-white duration-500" id="navbar">
   <div class="header h-24 mx-auto">
     <div class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-24 relative">
-      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36 " /></a></div>
+      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36 max-lg:w-28" /></a></div>
       <div class="links "><i class="fa-solid text-mainWhite max-md:hidden fa-bars max-md:text-3xl max-md:cursor-pointer toggler"></i>
         <!-- start menu -->
         <div class="menu visibleNavMenu  duration-500 ">
@@ -57,7 +57,7 @@
 <!-- end navbar -->
 <!-- scroll to top -->
 <div class="popup fixed bottom-0 right-0 z-50 visible-scroll-to-top " id="scroll-to-top">
-  <a href="#home"><i class="fa-solid fa-arrow-turn-up flex items-center justify-center bg-mainWhite text-mainOrange w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
+  <a href="#home"><i class="fa-solid fa-arrow-turn-up flex items-center justify-center bg-mainOrange text-mainWhite w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
 </div>
 <!-- scroll to top -->
 <!-- whatsapp link -->
@@ -66,14 +66,20 @@
 </div>
 <!-- whatsapp link -->
 <!-- start into section -->
-<section class="intro relative" id="home">
-  <div class="image-inro  overflow-hidden">
-    <img src="https://i.ibb.co/xgbymBL/STUDIO.png" alt="" class="-z-10 zoom">
+<section class="intro relative -mt-24 bg-newMain" id="home">
+  <div class="overflow-hidden">
+    <div class="video-intro-services w-full">
+      <!-- <img src="./videos/Untitled design.mp4" alt="" class="-z-10 zoom max-md:w-1/3"> -->
+      <video src="./videos/Untitled design.mp4" autoplay loop muted class="w-full h-full"></video>
+    </div>
   </div>
   <div class="intro-content  absolute text-center w-full h-full top-0 flex justify-center items-center overflow-hidden">
     <div class="text  max-md:w-full">
-      <h1 class="text-8xl  font-black text-mainWhite max-md:text-3xl">YANNI STUDIO<br> <span class="text-mainOrange text-6xl max-md:text-2xl">Media Production House</span></h1>
-      <div class="main-slider flex justify-center mt-2">
+      <!-- <h1 class=" font-black  text-mainOrange text-5xl max-md:text-3xl">Media Production House</h1> -->
+      <h1 class="text-8xl  font-black text-mainWhite max-md:text-5xl">YANNI STUDIO<br> <span class="text-mainOrange text-6xl max-md:text-3xl"></span></h1>
+
+      <h3 class="text-4xl  font-black text-mainOrange my-4 max-md:text-2xl"><span class="text-trqLight"></span><span class="typed"></span></h3>
+      <!-- <div class="main-slider flex justify-center mt-2">
         <div id="slider">
           <div class="servicesSlider">
             <div class="slide">
@@ -99,142 +105,204 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
 <!-- end into section -->
 <!-- about us section -->
-<section id="aboutUs">
-  <div class="aboutUS my-container pt-32 pb-10 max-sm:pt-14">
-    <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl " data-aos="flip-down">About Us</h2>
-    <div class="content-aboutUs flex items-center justify-between pt-14">
-      <div class="photo" data-aos="fade-right">
-        <img class="aboutUs-img w-3/4" src="https://i.ibb.co/tK28kpW/home-aboutus.png" alt="">
-      </div>
-      <div class="about-us-desc" data-aos="fade-left">
-        <h2 class="font-bold text-5xl text-mainOrange text-nowrap max-lg:text-4xl max-sm:text-center">Yanni Studio</h2>
-        <p class=" text-3xl pt-5">Is a production house makes a different types of visual and audio content.</p>
-        <p class=" text-3xl pt-10">We have a main target that
+
+
+
+
+
+
+
+
+
+
+<section class="about relative -m-2" id="aboutUs">
+  <div class="overflow-hidden">
+    <div class="video-intro-services w-full ">
+  <img src="https://i.ibb.co/xgbymBL/STUDIO.png" alt="" class="max-md:w-1/3" >
+    </div>
+  </div>
+  <div class="intro-content  absolute text-center w-full h-full top-0 flex justify-center items-center overflow-hidden">
+    <div class="text  ">
+      <div class="animated-heading w-full my-container">
+        <h2 data-aos="fade-down" class="font-bold text-7xl text-mainOrange text-nowrap max-lg:text-4xl max-sm:text-center">Yanni Studio</h2>
+        <p data-aos="fade-down" class=" text-4xl pt-5 max-lg:text-center max-lg:text-2xl text-mainWhite">Is a production house makes a different types of visual and audio content.</p>
+        <p data-aos="fade-down" class=" text-4xl pt-10 max-lg:text-center max-lg:text-2xl text-mainWhite">We have a main target that
           is everything in your imagination we will convert to content that you can see and listen.</p>
       </div>
     </div>
-  </div>
+  </div> 
 </section>
+
+
+
 <!-- slider -->
-<section class="services py-32 bg-newMain max-sm:py-14" id="services">
+<div class="my-container my-24">
   <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl" data-aos="flip-down">Services</h2>
-  <div class="slide-container swiper pt-14">
-    <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-            <!-- 1 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/LrNV6SP/home-motion-graphics-icon.png" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./motionGraphicsService.html" class="name">Motion Graphics</a>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/KjJSdNp/home-video-editing-icon.gif" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./videoEditingService.html" class="name">Video Editing</a>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/8bP6LYb/home-film-making-icon.gif" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./filmMakingService.html" class="name">Film Making</a>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/x3Q6wcN/home-web-deveolp-icon.gif" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./webDevelopService.html" class="name">Web development</a>
-                  </div>
-                </div>
-                <!-- 5 -->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img src="https://i.ibb.co/hDfrkk8/home-shotting-products-icon.gif" alt="" class="card-img">
-                    </div>
-                  </div>
-                  <div class="card-content">
-                    
-                    <a href="./shottingProductsService.html" class="name">Shotting products</a>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/FKYsHy6/home-audio-recording-icon.gif" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./audo&musicRecordingService.html" class="name">Audio &#38; Music Recording</a>
-                </div>
-            </div>
-            <!-- 7 -->
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                        <img src="https://i.ibb.co/TMFCyn1/home-socialm-media-icon.gif" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <a href="./socialMediaService.html" class="name">Social Media Services</a>
-                </div>
-            </div>
+</div>
+<section class="services-container   max-sm:py-14" id="services">
+  <div class="box-services flex  flex-col justify-center items-center ">
+<!-- motion graphics -->
+    <div class="box-services  w-10/12 max-lg:w-11/12 flex max-lg:flex-col h-full overflow-hidden" >
+      <div class="image w-1/2 max-lg:w-full max-lg:h-3/4  bg-mainWhite" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./new material for yanni studio for services/motoin graphics/motion graphics-home-services.jpg" alt="" class="h-full w-full ">
+      </div>
+      <div class="text w-1/2 max-lg:w-full py-8 px-4  bg-mainWhite " data-aos="fade-down" data-aos-duration="1000">
+        <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Motion Graphics</h2>
+        <p class="text-newMain text-2xl my-6 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+          At Yanni Studio, we specialize in creating high-quality motion graphics that are tailored to your specific needs and target audience.
+        </p>
+        <div class="" data-aos="flip-up" data-aos-duration="1200">
+          <a  href="./motionGraphicsService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+        </div>
         </div>
     </div>
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
+
+<!-- video editing -->
+    <div class="box-services w-10/12 max-lg:w-11/12 h-full flex flex-row-reverse max-lg:flex-col overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+          <div class="image w-1/2 max-lg:w-full" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./new material for yanni studio for services/video editing/video editing-home-services.png" alt="" class="h-full w-full ">
+          </div>
+          <div class="text w-1/2 max-lg:w-full py-8 px-4" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Video Editing</h2>
+            <p class="text-newMain text-2xl my-4 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+              Capture Your Vision, Elevate Your ideas and Brand with Captivating Video Production
+            </p>
+            <div class="" data-aos="flip-up" data-aos-duration="1200">
+              <a href="./videoEditingService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+            </div>
+          </div>
+    </div>
+
+<!-- film making -->
+    <div class="box-services w-10/12 max-lg:w-11/12 h-full flex max-lg:flex-col overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+      <div class="image w-1/2 max-lg:w-full" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./new material for yanni studio for services/film making/fim making-home-services.png" alt="" class="h-full w-full max-lg:h-3/4">
+      </div>
+      <div class="text w-1/2 max-lg:w-full py-5 px-4" data-aos="fade-down" data-aos-duration="1000">
+        <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Film Making</h2>
+        <p class="text-newMain text-2xl my-6 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+          Our team of passionate filmmakers brings a wealth of experience and creativity to every project we undertake. We are driven by a deep understanding of 
+          the art of storytelling and possess the technical skills to transform your vision into captivating cinematic experiences.
+        </p>
+        <div class="" data-aos="flip-up" data-aos-duration="1200">
+          <a href="./filmMakingService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+        </div>
+      </div>
+    </div>
+
+<!-- web development -->
+    <div class="box-services w-10/12 max-lg:w-11/12 flex max-lg:flex-col flex-row-reverse h-full overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+          <div class="image w-1/2 max-lg:w-full " data-aos="fade-up" data-aos-duration="1000">
+            <img src="./new material for yanni studio for services/web development/web development-home-services.jpeg" alt="" class="h-full w-full max-lg:h-3/4">
+          </div>
+          <div class="text w-1/2 max-lg:w-full py-8 px-4" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Web Development</h2>
+            <p class="text-newMain text-2xl my-4 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+              Craft a Compelling Online Presence with Our Exceptional Web Development Services
+              </p>
+              <div class="" data-aos="flip-up" data-aos-duration="1200">
+                <a href="./webDevelopService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+              </div>
+          </div>
+    </div>
+
+    <!-- Shotting Products -->
+        <div class="box-services w-10/12 max-lg:w-11/12 flex max-lg:flex-col h-full overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+              <div class="image w-1/2 max-lg:w-full " data-aos="fade-up" data-aos-duration="1000">
+                <img src="./new material for yanni studio for services/shotting products/shotting products-home-services.png" alt="" class="h-full w-full max-lg:h-3/4">
+              </div>
+              <div class="text w-1/2 max-lg:w-full py-8 px-4" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Shotting Products</h2>
+                <p class="text-newMain text-2xl my-4 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+                  Capture the Essence of Your Products with Our Captivating Product Photography and Videography
+                </p>
+                <div class="" data-aos="flip-up" data-aos-duration="1200">
+                  <a href="./webDevelopService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+                </div>
+              </div>
+        </div>
+
+<!-- Audio & Music Recording -->
+    <div class="box-services w-10/12 max-lg:w-11/12 flex max-lg:flex-col flex-row-reverse  h-full overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+                  <div class="image w-1/2 max-lg:w-full" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./new material for yanni studio for services/voice and music editing/voice and music editing-home-services.webp" alt="" class="h-full w-full max-lg:h-3/4">
+                  </div>
+                  <div class="text w-1/2 max-lg:w-full py-8 px-4" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Audio & Music Recording</h2>
+                    <p class="text-newMain text-2xl my-4 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+                      Elevate Your passion with Captivating Audio Content
+                    </p>
+                    <div class="" data-aos="flip-up" data-aos-duration="1200">
+                      <a href="./audo&musicRecordingService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+                    </div>
+                  </div>
+    </div>
+
+<!-- Social Media Services -->
+    <div class="box-services w-10/12 max-lg:w-11/12 flex max-lg:flex-col h-full overflow-hidden bg-mainWhite " data-aos="fade-up" data-aos-duration="1000">
+                      <div class="image w-1/2 max-lg:w-full " data-aos="fade-up" data-aos-duration="1000">
+                        <img src="./new material for yanni studio for services/social media/social media-home-services.png" alt="" class="h-full w-full max-lg:h-3/4">
+                      </div>
+                      <div class="text w-1/2 max-lg:w-full py-8 px-4" data-aos="fade-down" data-aos-duration="1000">
+                        <h2 class="font-bold text-5xl text-mainOrange max-lg:text-2xl" data-aos="zoom-in-up" data-aos-duration="1000">Social Media Services</h2>
+                        <p class="text-newMain text-2xl my-4 max-lg:text-xl" data-aos="zoom-in-up" data-aos-duration="1000">
+                          Elevate Your Brand's Social Media Presence with Our Expert Services
+                        </p>
+                        <div class="" data-aos="flip-up" data-aos-duration="1200">
+                          <a href="./socialMediaService.html" class="text-2xl text-mainOrange border-mainOrange border-2 py-2 px-3 duration-300 hover:text-mainWhite hover:bg-mainOrange">More info</a>
+                        </div>
+                      </div>
+    </div>
+
+
+
+
+
+
+
   </div>
 </section>
 <!-- slider -->
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- our work -->
 <section id="ourWork">
   <div class="my-container pt-32 pb-10">
     <h2 class="text-9xl font-black w-full text-center text-mainOrange max-lg:text-6xl" data-aos="flip-down">Our Work</h2>
     <div class="content ourWork flex flex-col gap-6 w-full justify-center items-center mt-10">
       <!-- <a href="./ShowReals.html" class="block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainWhite hover:bg-mainWhite hover:text-newMain duration-300">SHOW REALS</a> -->
-      <div class="w-full flex justify-center" data-aos="fade-right">
+      <div class="w-full flex justify-center"  data-aos="fade-up">
         <a href="./ShortFilms.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">SHORT FILMS</a>
       </div>
-      <div class="w-full flex justify-center" data-aos="fade-left">
+      <div class="w-full flex justify-center" data-aos="fade-up">
         <a href="./MotionGraphics.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">MOTION GRAPHICS</a>
       </div>
-      <div class="w-full flex justify-center" data-aos="fade-right">
+      <div class="w-full flex justify-center"  data-aos="fade-up">
         <a href="./ShottingProducts.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">SHOTTING PRODUCTS</a>
       </div>
-      <div class="w-full flex justify-center" data-aos="fade-left">
+      <div class="w-full flex justify-center" data-aos="fade-up">
         <a href="./CoverAndOriginalSongs.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">COVER AND ORIGINAL SONGS</a>
       </div>
-      <div class="w-full flex justify-center" data-aos="fade-right">
+      <div class="w-full flex justify-center"  data-aos="fade-up">
         <a href="./Photography.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">PHOTOGRAPHY</a>
       </div>
-      <div class="w-full flex justify-center" data-aos="fade-left">
+      <div class="w-full flex justify-center" data-aos="fade-up">
         <a href="./Documentaries.html"  class="duratoin-300 block w-3/5 max-md:w-9/12 max-xl:w-9/12 max-lg:text-2xl text-center px-4 pt-4 pb-2 rounded-3xl max-md:text-2xl  border-2 text-mainOrange border-mainOrange text-4xl hover:border-mainOrange hover:bg-mainOrange hover:text-mainWhite duration-300">DOCUMENTARIES</a>
       </div>
     </div>
@@ -248,7 +316,7 @@
     <div class="carousel" 
     style="
     --width: 250px; 
-    --height: 250px; 
+    --height: 260px; 
     --quantity: 10;
     --duration: 15s">
       <div class="clients grid place-items-center gap-4 pt-14 carousel__list">
@@ -328,11 +396,39 @@
   </div>
 </footer>
 <!-- footer -->
-<script src="./js/swiper-bundle.min.js"></script>
+
 <script src="./js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+  const typedElement = document.querySelector('.typed');
+const typed = new Typed (typedElement,{
+    strings:
+    [
+        'Media Production House'
+    ],
+    typeSpeed:100,
+    backSpeed:100,
+    loop: false,
+  loopCount: Infinity,
+})
+
+</script>
+<script>
+  function changeBg() {
+  let navbar = document.getElementById("navbar");
+  let scrollValue = window.scrollY;
+  if (scrollValue < 500) {
+    navbar.classList.remove("bgColor");
+  } else {
+    navbar.classList.add("bgColor");
+  }
+}
+window.addEventListener("scroll", changeBg);
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+
 </body>
 </html>

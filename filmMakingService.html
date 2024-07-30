@@ -18,7 +18,7 @@
 <header class="sticky top-0 z-50 bg-white duration-500" id="navbar">
   <div class="header h-24 mx-auto">
     <div class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-24 relative">
-      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36" /></a></div>
+      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36 max-lg:w-28" /></a></div>
       <div class="links "><i class="fa-solid text-mainWhite max-md:hidden fa-bars max-md:text-3xl max-md:cursor-pointer toggler"></i>
         <!-- start menu -->
         <div class="menu visibleNavMenu  duration-500 ">
@@ -56,13 +56,16 @@
 <!-- end navbar -->
 <!-- film making intro -->
 <section class="intro relative" id="home">
-  <div class="image-inro  overflow-hidden">
-<video src="./videos/film makink.mp4" autoplay loop muted class="w-full h-full"></video>
+  <div class="overflow-hidden">
+
+    <div class="video-intro-services  w-full">
+  <video src="./videos/film makink.mp4" autoplay loop muted class="w-full h-full"></video>
+    </div>
   </div>
   <div class="intro-content  absolute text-center w-full h-full top-0 flex justify-center items-center overflow-hidden">
     <div class="text  ">
       <div class="animated-heading w-full">
-        <h1 class="text-9xl font-bold w-full text-center text-mainWhite max-md:text-4xl" >Film making</h1>
+        <h1 class="text-9xl font-bold w-full text-center text-mainWhite max-md:text-5xl" >Film making</h1>
       </div>
     </div>
   </div>
@@ -73,10 +76,10 @@
     <div class="p-4 bg-mainOrange rounded-3xl " data-aos="flip-up">
       <p class="text-newMain text-4xl max-md:text-3xl text-center leading-tight ">Our team of passionate filmmakers brings a wealth of experience and creativity to every project we undertake. We are driven by a deep understanding of the art of storytelling and possess the technical skills to transform your vision into captivating cinematic experiences.</p>
     </div>
-    <div class="mt-8 ml-8" data-aos="fade-right">
+    <div class="mt-8 ml-8" data-aos="fade">
       <p class="text-newMain text-3xl leading-tight relative max-md:text-2xl"><span class="text-mainOrange font-bold leading-loose">Short Film Production</span><br>will bring your vision to life. We'll work closely with you to develop a compelling script, assemble a talented cast and crew, and meticulously craft every aspect of your film, from pre-production to post-production.</p>
     </div>
-    <div class="mt-8 ml-8" data-aos="fade-left">
+    <div class="mt-8 ml-8" data-aos="fade">
       <p class="text-newMain text-3xl leading-tight relative max-md:text-2xl"><span class="text-mainOrange font-bold leading-loose">Documentary Production</span><br>will capture the essence of your true stories. We'll conduct in-depth research, engage with compelling subjects, and utilize cinematic techniques to create documentaries that inform, inspire, and evoke emotion.</p>
     </div>
   </div>
@@ -123,6 +126,18 @@
 </footer>
 <!-- footer -->
 <script src="./js/main.js"></script>
+<script>
+  function changeBg() {
+  let navbar = document.getElementById("navbar");
+  let scrollValue = window.scrollY;
+  if (scrollValue < 500) {
+    navbar.classList.remove("bgColor");
+  } else {
+    navbar.classList.add("bgColor");
+  }
+}
+window.addEventListener("scroll", changeBg);
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

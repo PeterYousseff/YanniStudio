@@ -18,7 +18,7 @@
 <header class="sticky top-0 z-50 bg-white duration-500" id="navbar">
   <div class="header h-24 mx-auto">
     <div class="flex justify-between items-center p-4 mx-auto w-9/12 max-xl:w-11/12 h-24 relative">
-      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36" /></a></div>
+      <div class="logo"><a href="./index.html"><img src="https://i.ibb.co/BgwJrnS/final-logooo.png" alt="" class="w-36 max-lg:w-28" /></a></div>
       <div class="links "><i class="fa-solid text-mainWhite max-md:hidden fa-bars max-md:text-3xl max-md:cursor-pointer toggler"></i>
         <!-- start menu -->
         <div class="menu visibleNavMenu  duration-500 ">
@@ -54,14 +54,17 @@
   </div>
 </header>
 
-<section class="intro relative" id="home">
-  <div class="image-inro  overflow-hidden  w-full">
-<video src="./videos/motion graphics.mp4" autoplay loop muted class="w-full h-full"></video>
+
+<section class="intro relative -mt-24" id="home">
+  <div class="overflow-hidden">
+    <div class="video-intro-services w-full">
+  <video src="./videos/motion graphics.mp4" autoplay loop muted class="w-full h-full"></video>
+    </div>
   </div>
   <div class="intro-content  absolute text-center w-full h-full top-0 flex justify-center items-center overflow-hidden">
     <div class="text ">
       <div class="animated-heading w-full">
-        <h1 class="text-9xl font-bold w-full text-center text-mainWhite max-md:text-4xl">Motion Graphics</h1>
+        <h1 class="text-9xl font-bold w-full text-center text-mainWhite max-md:text-5xl">Motion Graphics</h1>
       </div>
     </div>
   </div>
@@ -83,13 +86,13 @@
     </div>
     <!-- intro -->
     <!-- description -->
-    <div class="mt-8 ml-8" data-aos="fade-right">
+    <div class="mt-8 ml-8" data-aos="fade">
       <p class="text-newMain text-3xl leading-tight relative max-md:text-2xl">  <span class="text-mainOrange font-bold">Product demos :</span> great way to show off the features and benefits of your product.</p>
     </div>
-    <div class="mt-8 ml-8" data-aos="fade-left">
+    <div class="mt-8 ml-8" data-aos="fade">
       <p class="text-newMain text-3xl leading-tight relative max-md:text-2xl">  <span class="text-mainOrange font-bold">Social media videos :</span> great way to engage with your audience and build brand awareness.</p>
     </div>
-    <div class="mt-8 ml-8" data-aos="fade-right">
+    <div class="mt-8 ml-8" data-aos="fade">
       <p class="text-newMain text-3xl leading-tight relative max-md:text-2xl">  <span class="text-mainOrange font-bold">Explainer Videos :</span> fun motion story and explanation to make your customers love your product.</p>
     </div>
     <!-- description -->
@@ -144,6 +147,18 @@
 
 
 <script src="./js/main.js"></script>
+<script>
+  function changeBg() {
+  let navbar = document.getElementById("navbar");
+  let scrollValue = window.scrollY;
+  if (scrollValue < 500) {
+    navbar.classList.remove("bgColor");
+  } else {
+    navbar.classList.add("bgColor");
+  }
+}
+window.addEventListener("scroll", changeBg);
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
