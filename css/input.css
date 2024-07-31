@@ -8,12 +8,10 @@ html {
 }
 :root {
   --main-orange : #f59323;
-  --main-blue : #0a3a79;
 }
 
 /* google font */
 body {
-  /* background-color: var(--main-blue); */
   font-family: "Josefin Sans", sans-serif;
   background-color: #ddd;
   background-color: #f2f2f2;
@@ -319,6 +317,15 @@ transition: 0.5s;
 
 
 /* services */
+
+/* our work */
+.owr-work-section {
+  background-image: url('/our\ work\ bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* our work */
+
 
 /* clients */
 .clientsSection .clients .client {
@@ -697,22 +704,14 @@ display: none;
 
 /* image gallery  */
 /* contact us page */
-.contact-us .form ,
-.contact-us .photo {
-  box-shadow: 2px 2px 138px 10px rgba(245,147,35,0.42);
-  -webkit-box-shadow: 2px 2px 138px 10px rgba(245,147,35,0.42);
-  -moz-box-shadow: 2px 2px 138px 10px rgba(245,147,35,0.42);
-}
+
 /* contact us page */
 
 @media (max-width:768px) {
   .video-intro-services {
-    width: 10%;
+    width: 100%;
     writing-mode: vertical-rl;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
     align-content: center;
   } 
 }
