@@ -1461,7 +1461,7 @@ header {
 /* our work */
 
 .owr-work-section {
-  background-image: url('/our\ work\ bg.png');
+  background-image: url('https://i.ibb.co/8PRbvWy/our-work-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
