@@ -708,10 +708,15 @@ display: none;
 
 @media (max-width:768px) {
   .video-intro-services {
-    width: 100%;
+    /* width: 100%; */
     writing-mode: vertical-rl;
     display: grid;
     align-content: center;
+  } 
+}
+@media (max-width:768px) {
+  .video-intro-services .about-image {
+    width: 1000px;
   } 
 }
 

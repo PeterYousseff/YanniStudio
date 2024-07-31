@@ -676,6 +676,10 @@ video {
   margin-top: 2rem;
 }
 
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -807,6 +811,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .text-nowrap {
@@ -1893,10 +1901,14 @@ footer .footerContent h3::before {
 
 @media (max-width:768px) {
   .video-intro-services {
-    width: 100%;
+    /* width: 100%; */
     writing-mode: vertical-rl;
     display: grid;
     align-content: center;
+  }
+
+  .video-intro-services .about-image {
+    width: 1000px;
   }
 }
 
