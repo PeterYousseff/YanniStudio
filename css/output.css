@@ -594,10 +594,6 @@ video {
   z-index: 50;
 }
 
-.-m-2 {
-  margin: -0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -626,6 +622,10 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
 }
 
 .-mt-24 {
@@ -674,10 +674,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
 }
 
 .block {
