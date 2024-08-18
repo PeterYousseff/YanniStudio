@@ -656,10 +656,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
@@ -905,11 +901,6 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-8 {
@@ -1614,7 +1605,7 @@ footer .footerContent h3::before {
   height: 100%;
   position: relative;
   overflow: hidden;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .video-container .video .overlay{
@@ -1627,13 +1618,13 @@ footer .footerContent h3::before {
   transform: translate(-50% , -50%);
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.541);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   pointer-events: none;
 }
 
 .video-container .video:hover .overlay {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .video-container .video .overlay p {
@@ -1908,6 +1899,37 @@ footer .footerContent h3::before {
   }
 }
 
+.heading {
+  line-height: 1.8;
+}
+
+.glowIn {
+  color: var(--main-orange);
+}
+
+.glowIn span {
+  animation: glow-in 2s both infinite;
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .hover\:border-mainOrange:hover {
   --tw-border-opacity: 1;
   border-color: rgb(245 147 35 / var(--tw-border-opacity));
@@ -2151,14 +2173,6 @@ footer .footerContent h3::before {
     align-items: center;
   }
 }
-
-
-
-
-
-
-
-
 
 
 

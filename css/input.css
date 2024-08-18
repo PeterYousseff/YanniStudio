@@ -441,7 +441,7 @@ footer .aboutUS i {
   height: 100%;
   position: relative;
   overflow: hidden;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .video-container .video .overlay{
   position: absolute;
@@ -453,12 +453,12 @@ footer .aboutUS i {
   transform: translate(-50% , -50%);
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.541);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   pointer-events: none;
 }
 .video-container .video:hover .overlay {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .video-container .video .overlay p {
   width: 100%;
@@ -727,6 +727,34 @@ display: none;
 
 
 
+
+
+.heading {
+  line-height: 1.8;
+}
+
+.glowIn {
+color: var(--main-orange);
+}
+.glowIn span {
+  animation: glow-in 2s both infinite;
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 
