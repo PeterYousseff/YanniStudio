@@ -6,6 +6,7 @@
     "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
   },
   "dependencies": {
+    "lenis": "^1.1.10",
     "normalize.css": "^8.0.1"
   }
 }
