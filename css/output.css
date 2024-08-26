@@ -714,6 +714,10 @@ video {
   height: 100svh;
 }
 
+.h-3\/4 {
+  height: 75%;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -761,6 +765,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .-translate-x-1\/2 {
@@ -2434,6 +2442,10 @@ nav li:hover a span:before{
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
+
   .max-md\:w-9\/12 {
     width: 75%;
   }
@@ -2476,6 +2488,12 @@ nav li:hover a span:before{
 
   .max-sm\:text-center {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
   }
 }
 
