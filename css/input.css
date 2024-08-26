@@ -13,8 +13,7 @@ html {
 /* google font */
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: #ddd;
-  background-color: #f2f2f2;
+  background-color: #333;
   font-optical-sizing: auto;
   font-style: normal;
   overflow-x: hidden;
@@ -892,46 +891,6 @@ nav li:hover a span:before{
 }
 /* services gallery scroll h */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* services page */
 .servicesCards  {
   grid-template-columns: repeat(auto-fill , minmax(500px ,1fr));
@@ -1054,8 +1013,80 @@ backdrop-filter: blur(8px);
   transition-delay: 0.25s;
 }
 
-
-
-
 /* services page */
+
+
+
+/* loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+
+.loader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.loader .loader-wrapper img {
+  width: 300px;
+  animation: fade linear 0.75s infinite;
+}
+@keyframes fade {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loader-text {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.loader-bar {
+  margin-top: 18px;
+  width: 95%;
+  background-color: #ccc;
+  height: 1px;
+}
+
+.loader-progress {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: #f59323;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* loader */
 

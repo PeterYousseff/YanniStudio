@@ -16,13 +16,29 @@
       <!-- scroll library -->
   <title>Yanni Studio | Audio &#38; Music Recording</title>
 </head>
-<body class="bg-newMain">
+<body class="bg-newMain js-load">
+
+<!-- loader  -->
+<div id="site-loader" class="loader">
+  <div class="loader-wrapper">
+    <img src="https://i.ibb.co/q7jBMBb/yanni-studio-new-website-logo.png" alt="">
+    <p class="loader-text">0%</p>
+    <div class="loader-bar">
+      <span class="loader-progress">
+        <span></span>
+      </span>
+    </div>
+  </div>
+  <div class="loader-overlay u-absolute u-pos-tl u-fit"></div>
+</div>
+<!-- loader  -->
+
 
 <!-- mouse follower -->
-<div id="circle" class="circle w-0 h-0 z-50"></div>
+<div id="circle" class="circle w-0 h-0 z-50 js-load"></div>
 <!-- mouse follower -->
 <!-- navbar -->
-<header class="z-50">
+<header class="z-50 js-load">
   <div class="header-row">
     <h2 class="w-full">
       <a href="./index.html">
@@ -40,7 +56,7 @@
         </div>
     </div>
 </header>
-<div class="fullpage-menu relative z-40">
+<div class="fullpage-menu relative z-40 js-load">
     <div class="fullpage-menu-inner">
         <div class="menu-bg"></div>
         <nav>
@@ -61,7 +77,7 @@
 
 
 <!-- audio & music recording -->
-<section class="intro relative -mt-24">
+<section class="intro relative -mt-24 js-load" id="first">
   <div class="overflow-hidden">
     <div class="video-intro-services w-full">
   <video src="./videos/voice and music editing.mp4" autoplay loop muted class="w-full h-full"></video>
@@ -76,7 +92,7 @@
   </div>
 </section>
 <!-- audio & music recording -->
-<section>
+<section class="js-load">
   <div class="my-container pt-20 pb-10">
 
 
@@ -126,7 +142,7 @@
 
 
 <!-- footer -->
-<footer class="max-sm:py-6 py" id="footer">
+<footer class="max-sm:py-6 py js-load" id="footer">
   <div class="p-5">
     <div
       class="footerContent flex my-container justify-center max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8"
@@ -145,7 +161,7 @@
             </a>
           </div>
           <div class="">
-            <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" target="_blank" class="">
+            <a href="https://www.instagram.com/yannistudio.media?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="">
               <i class="fa-brands fa-fw fa-instagram text-2xl text-mainWhite w-10 h-10 rounded-full flex hover:text-mainOrange"></i>
             </a>
           </div>
@@ -168,7 +184,7 @@
               info@yannistudio.com</a>
           </div>
           <div class="w-80 ">
-            <a href="https://maps.app.goo.gl/7BJTxHdVAYKcm4MHA" target="_blank" class="group flex justify-center items-center gap-2 text-mainWhite duration-500 hover:text-mainOrange">
+            <a href="https://www.google.com/maps?q=29.8452212,31.3290413" target="_blank" class="group flex justify-center items-center gap-2 text-mainWhite duration-500 hover:text-mainOrange">
               <i class="fa-solid fa-location-dot text-mainWhite group-hover:text-mainOrange w-10 h-10 rounded-full flex text-2xl"></i>
               70 Abdelrahman.ST Cairo - Egypt</a>
           </div>
@@ -178,6 +194,11 @@
   </div>
 </footer>
 <!-- footer -->
+
+
+
+
+
 
 <script src="./js/main.js"></script>
 
@@ -205,5 +226,12 @@
 <script>
   AOS.init();
 </script>
+
+<!-- loader   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+<script src="./js/loader.js"></script>
+<!-- loader   -->
 </body>
 </html>
