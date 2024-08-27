@@ -714,10 +714,6 @@ video {
   height: 100svh;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -765,10 +761,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .-translate-x-1\/2 {
@@ -2272,6 +2264,7 @@ nav li:hover a span:before{
 
 .loader .loader-wrapper img {
   width: 300px;
+  margin-bottom: 50px;
   animation: fade linear 0.75s infinite;
 }
 
@@ -2330,11 +2323,6 @@ nav li:hover a span:before{
 
 .hover\:bg-mainWhite:hover {
   background-color: #ffff;
-}
-
-.hover\:bg-newMain:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
 }
 
 .hover\:text-mainOrange:hover {

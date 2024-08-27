@@ -1047,6 +1047,7 @@ backdrop-filter: blur(8px);
 }
 .loader .loader-wrapper img {
   width: 300px;
+  margin-bottom: 50px;
   animation: fade linear 0.75s infinite;
 }
 @keyframes fade {
