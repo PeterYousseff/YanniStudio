@@ -95,13 +95,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function scrollRelatedImages(direction) {
-        const relatedImages = relatedContainer.querySelectorAll('.related');
+        const relatedImages = relatedContainer.children;
         const relatedWidth = relatedImages[0].clientWidth + 10; // Image width + margin
         relatedContainer.scrollLeft += direction * relatedWidth;
+        applyTransitionToRelatedImages(direction);
+    }
+
+    function applyTransitionToRelatedImages(direction) {
+        const relatedElems = relatedContainer.querySelectorAll('.related');
+        relatedElems.forEach(elem => {
+            elem.style.opacity = 0; // Fade out
+            setTimeout(() => {
+                elem.style.opacity = 1; // Fade in
+            }, 250); // Wait for the fade out to complete
+        });
     }
 
     function scrollToCurrentRelatedImage() {
-        const relatedImages = relatedContainer.querySelectorAll('.related');
+        const relatedImages = relatedContainer.children;
         const relatedWidth = relatedImages[0].clientWidth + 10; // Image width + margin
         const newScrollLeft = currentImageIndex * relatedWidth - (relatedContainer.clientWidth / 2) + (relatedWidth / 2);
         relatedContainer.scrollLeft = newScrollLeft;
