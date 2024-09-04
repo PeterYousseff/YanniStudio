@@ -151,79 +151,7 @@ color: var(--main-orange);
   }
 }
 /* intro section */
-/* about us section  */
-@media (max-width: 992px) {
-  .content-aboutUs .aboutUs-img  {
-    display:none;
-  }
-}
-/* [SLIDER] */
-#slider,  #slider .slide{
-  width: 500px;
-  height: 100px;
-}
-@media (max-width:786px) {
-  #slider,  #slider .slide{
-    width: 300px;
-  }
-}
-#slider {
-  overflow: hidden;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--main-orange);
-}
-@media (max-width:786px) {
-  #slider {
-    font-size: 1.5rem;
-  }
-}
-#slider .servicesSlider {
-  position: relative;
-  width: 9000px; /* Assign an insanely large width */
-  top: 0;
-  right: 0;
-  animation: slide-animation 30s infinite;
-}
-#slider .slide {
-  position: relative;
-  float: left;
-  box-sizing: border-box;
-}
 
-/* [ANIMATION] */
-@keyframes slide-animation {
-  0% { 
-    opacity: 0;
-    right: 0;
-  }
-  10% {
-    opacity: 1;
-    right: 0; 
-  }
-  20% { right: 100%; }
-  30% { right: 100%; }
-  40% { right: 200%; }
-  50% { right: 200%; }
-  60% { right: 300%; }
-  70% { right: 300%; }
-  80% { right: 400%; }
-  90% {
-    opacity: 1;
-    right: 500%; 
-  }
-  100% {
-    right: 600%;
-  }
-  110% {
-    right: 700%;
-  }
-}
-
-/* about us section  */
-.about-us-desc {
-  color: #333;
-}
 /* about us section  */
 /* services */
 .services .cards {
@@ -336,20 +264,6 @@ footer .aboutUS i {
   align-items: center;
   transition: 0.5s;
   }
-  footer .footerContent h3 {
-    /* z-index: 0; */
-  }
-  /* footer .footerContent h3::before {
-  content: "";
-  position: absolute;
-  background-color: white;
-  width: 5px;
-  height: 30px;
-  bottom: 0;
-  top: 0;
-  left: -15px;
-  z-index: 0;
-  } */
 
 @media (max-width : 1280px) {
   footer .footerContent .map iframe {
@@ -821,6 +735,8 @@ nav li:hover a span:before{
 }
 
 .cardService:hover .content {
+  width: 100%;
+  height: 100%;
 backdrop-filter: blur(8px);
 }
 
@@ -834,7 +750,8 @@ backdrop-filter: blur(8px);
   overflow: hidden;
   color: transparent;
 }
-.cardService:hover .letter, .rolling-text.play .letter {
+.cardService:hover .letter,
+.rolling-text.play .letter {
   transform: translateY(-100%);
 }
 .rolling-text .block:last-child {
@@ -845,7 +762,6 @@ backdrop-filter: blur(8px);
   /* transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1); */
   transition: transform 0.9s cubic-bezier(0.79,-0.03,0.48,1.5);;
 }
-
 
 
 .letter:nth-child(1) {
@@ -902,7 +818,6 @@ backdrop-filter: blur(8px);
 .letter:nth-child(18) {
   transition-delay: 0.25s;
 }
-
 .letter:nth-child(19) {
   transition-delay: 0s;
 }
@@ -921,10 +836,7 @@ backdrop-filter: blur(8px);
 .letter:nth-child(24) {
   transition-delay: 0.25s;
 }
-
 /* services page */
-
-
 
 /* loader */
 .loader {
@@ -997,6 +909,5 @@ backdrop-filter: blur(8px);
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 /* loader */
 
