@@ -1,5 +1,5 @@
 // Initialize EmailJS with your Service ID and Template ID
-emailjs.init('_05SozipdoPy1Adp7');
+emailjs.init('fYB0wZsfTQmZugVhF');
 
 // Function to send email
 function sendEmail(event) {
@@ -11,7 +11,7 @@ function sendEmail(event) {
     const message = document.getElementById('message').value;
 
     // Use EmailJS to send the email
-    emailjs.send('service_dnkuazq', 'template_mnlnn96', {
+    emailjs.send('service_0lxn1g9', 'template_kcf4xcr', {
         from_name: name,
         reply_to: email,
         message: message
