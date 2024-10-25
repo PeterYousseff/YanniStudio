@@ -42,9 +42,13 @@ app.post("/sendEmail", (req, res) => {
   });
 });
 
-app.get("/sendEmail",(req,res)=>{
-  res.send("A7a")
-})
+app.get("/sendEmail", (req, res) => {
+  res.send("A7a");
+});
+
+app.all("*", (req, res) => {
+  res.send(`Can't find ${req.url} on server`);
+});
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
