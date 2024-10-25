@@ -5,8 +5,8 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
-    "devM" : "nodemon server.js",
-    "start" : "node server.js"
+    "devM": "nodemon server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.21.1",
@@ -15,7 +15,7 @@
     "normalize.css": "^8.0.1"
   },
   "engines": {
-    "node" : "21.5.0"
+    "node": "20.18.0"
   },
   "name": "yannistudio-noede",
   "version": "1.0.0",
