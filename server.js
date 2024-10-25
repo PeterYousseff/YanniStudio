@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/contact.html");
 });
 
-app.post("/", (req, res) => {
+app.post("/sendEmail", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
