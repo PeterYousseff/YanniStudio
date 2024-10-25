@@ -42,6 +42,10 @@ app.post("/sendEmail", (req, res) => {
   });
 });
 
+app.get("/sendEmail",(req,res)=>{
+  res.send("A7a")
+})
+
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
