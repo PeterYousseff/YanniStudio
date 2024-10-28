@@ -15,10 +15,7 @@
       rel="stylesheet"
     />
     <!-- scroll library -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/lenis@1.1.10/dist/lenis.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.10/dist/lenis.css"/>
     <!-- scroll library -->
     <title>Contact Us</title>
   </head>
@@ -203,87 +200,25 @@
           </div>
 
           <div class="form-container">
-            <form
-              id="contact-Form"
-              class="contact-Form felx flex-col items-center justify-center duration-500"
-            >
+            <form id="yannistudioContactForm" action="" class="contact-Form felx flex-col items-center justify-center duration-500">
               <!-- name -->
-              <label
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                for="name"
-                class="text-mainWhite text-2xl font-bold mt-4 mb-2 block"
-                >Your Name:</label
-              >
-              <input
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                type="text"
-                id="name"
-                required
-                class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500"
-                placeholder="Your Name"
-              />
+              <label data-aos="flip-down" data-aos-duration="1000" for="name" class="text-mainWhite text-2xl font-bold mt-4 mb-2 block" >Your Name:</label>
+              <input data-aos="flip-down" data-aos-duration="1000" type="text" id="name" required class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Name"/>
 
               <!-- email -->
-              <label
-                data-aos="flip-down"
-                data-aos-duration="1200"
-                class="text-mainWhite text-2xl font-bold mt-4 mb-2 block"
-                >Your Email:</label
-              >
-              <input
-                data-aos="flip-down"
-                data-aos-duration="1200"
-                type="email"
-                id="email"
-                required
-                class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500"
-                placeholder="Your Email"
-              />
+              <label data-aos="flip-down" data-aos-duration="1200" class="text-mainWhite text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
+              <input data-aos="flip-down" data-aos-duration="1200" type="email" id="email" required class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email"/>
 
               <!-- subject -->
-              <label
-                data-aos="flip-down"
-                data-aos-duration="1200"
-                for="email"
-                class="text-mainWhite text-2xl font-bold mt-4 mb-2 block"
-                >subject:</label
-              >
-              <input
-                data-aos="flip-down"
-                data-aos-duration="1200"
-                type="text"
-                id="subject"
-                required
-                class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500"
-                placeholder="Your Subject"
-              />
+              <label data-aos="flip-down" data-aos-duration="1200" for="email" class="text-mainWhite text-2xl font-bold mt-4 mb-2 block">subject:</label>
+              <input data-aos="flip-down" data-aos-duration="1200" type="text" id="subject" required class="w-full py-3 px-2 outline-none focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Subject"/>
 
-              <label
-                data-aos="flip-down"
-                data-aos-duration="1400"
-                for="message"
-                class="text-mainWhite text-2xl font-bold mt-4 mb-2 block"
-                >Message:</label
-              >
-              <textarea
-                data-aos="flip-down"
-                data-aos-duration="1400"
-                id="message"
-                rows="4"
-                required
-                class="w-full outline-none py-3 px-2 focus:placeholder:opacity-0 focus:placeholder:duration-500"
-                placeholder="Your message"
-              ></textarea>
+              <!-- message -->
+              <label data-aos="flip-down" data-aos-duration="1400" for="message" class="text-mainWhite text-2xl font-bold mt-4 mb-2 block">Message:</label>
+              <textarea data-aos="flip-down" data-aos-duration="1400" id="message" rows="4" required class="w-full outline-none py-3 px-2 focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
 
-              <input
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                type="submit"
-                value="Send Message"
-                class="submit w-full mt-4 block text-3xl font-bold bg-mainWhite p-3 hover:text-mainWhite hover:bg-mainOrange duration-500"
-              />
+              <!-- submit -->
+              <input data-aos="flip-down" data-aos-duration="1000" type="submit" value="Send Message" class="submit w-full mt-4 block text-3xl font-bold bg-mainWhite p-3 hover:text-mainWhite hover:bg-mainOrange duration-500"/>
             </form>
           </div>
         </div>
@@ -386,6 +321,9 @@
     </footer>
     <!-- footer -->
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./js/contactUs.js"></script>
 
     <script src="./js/main.js"></script>
