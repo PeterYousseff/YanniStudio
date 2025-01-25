@@ -5,10 +5,10 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
-    "devM": "nodemon server.js",
     "start": "node server.js"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001692",
     "express": "^4.21.1",
     "lenis": "^1.1.10",
     "normalize.css": "^8.0.1"
